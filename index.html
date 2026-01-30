@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>seb_ass browser</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- panel lateral -->
+  <nav id="side-panel">
+    <a href="https://web.whatsapp.com" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+    <a href="https://instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
+    <a href="https://facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
+    <a href="https://twitter.com" target="_blank"><i class='bx bxl-twitter'></i></a>
+  </nav>
+
+  <!-- terminal -->
+  <div class="terminal-wrapper">
+
+    <div id="welcome">
+      <span id="user"></span>@<span id="host"></span>:~$ ready
+    </div>
+
+    <div class="terminal">
+      <span class="prompt">&gt;</span>
+      <div class="input-wrap">
+        <input
+          id="search"
+          autofocus
+          autocomplete="off"
+          placeholder="type a command or search..."
+        />
+        <div class="suggestions" id="suggestions"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- clima -->
+  <div id="weather">cargando clima…</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
